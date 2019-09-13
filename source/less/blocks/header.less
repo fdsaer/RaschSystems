@@ -1,0 +1,353 @@
+.header__top-line {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1280px;
+  top: 0;
+  display: flex;
+  padding-right: 8px;
+  min-height: 40px;
+  justify-content: space-between;
+  z-index: 5;
+  background-color: #ffffff;
+
+  &--shadow {
+    box-shadow: 0 0 10px 0 #000000;
+  }
+}
+
+.header__logo-link {
+  padding: 5px 12px;
+}
+
+.header__logo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header__user-menu--desktop {
+  display: none;
+}
+
+.header__help-button {
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url("../img/close-icon.png");
+  background-repeat: no-repeat;
+  background-position: center 11px;
+  font-size: 0;
+  line-height: 0;
+
+  &--closed {
+    background-image: url("../img/menu-icon.png");
+  }
+}
+
+.header__user-menu-item--checked-in {
+  display: none;
+}
+
+.header__help-menu-wrapper--hidden {
+  display: none;
+}
+
+.header__help-menu-wrapper {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 360px;
+  padding: 8px;
+  top: 40px;
+  right: 0;
+  background-color: #ffffff;
+}
+
+.header__button-name {
+  display: none;
+}
+
+.header__help-menu-wrapper .header__help-menu,
+.header__help-menu-wrapper .header__user-menu--mobile {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header__help-menu-wrapper .header__help-menu {
+  margin-bottom: 12px;
+}
+
+.header__help-menu-item {
+  margin-bottom: 7px;
+}
+
+.header__help-menu-link {
+  display: block;
+  padding: 9px;
+  padding-left: 17px;
+  line-height: 21px;
+  font-size: 15px;
+  color: #0777ba;
+}
+
+.header__help-menu-item--active .header__help-menu-link {
+  background-color: #e6ecf1;
+}
+
+.header__help-menu-item:hover .header__help-menu-link {
+  color: red;
+  text-decoration: none;
+}
+
+
+.header__user-menu-item--checked-out {
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 1px;
+  border: solid 2px #0777ba;
+  text-align: center;
+
+  &:hover {
+    box-shadow: inset 2px 2px 5px -1px grey, 2px 2px 5px -1px #000000;
+  }
+
+  &:active {
+    box-shadow: inset 2px 2px 5px -1px #000000, 2px 2px 5px -1px grey;
+  }
+}
+
+.header__user-menu-link {
+  display: block;
+  color: #0777ba;
+  padding: 9px;
+  padding-bottom: 12px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.header__searching-form {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding: 43px 16px;
+  min-height: 213px;
+  background-color: #4180b9;
+  background-image: url("../img/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto 213px;
+  text-align: center;
+}
+
+.header__searching-field-wrapper {
+  position: relative;
+}
+
+.header__searching-form label {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 26px;
+  font-size: 21px;
+}
+
+.header__searching-form input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 46px;
+  padding: 0 13px;
+  padding-right: 40px;
+  border: none;
+
+  &:focus {
+    box-shadow: inset 2px 2px 5px -1px grey;
+  }
+}
+
+.header__searching-form small {
+  display: none;
+  color: #ffffff;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.header__searching-button {
+  position: absolute;
+  border: none;
+  padding: 0;
+  width: 46px;
+  height: 46px;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  background-image: url("../img/search-icon.png");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+}
+
+.header__searching-button span {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .header__top-line {
+    min-height: 67px;
+    padding-left: 21px;
+    padding-right: 17px;
+    align-items: center;
+  }
+
+  .header__user-menu--desktop {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+  }
+
+  .header__user-menu-item--checked-out {
+    width: 93px;
+    height: 36px;
+  }
+
+  .header__user-menu-link {
+    padding: 5px;
+    padding-bottom: 7px;
+  }
+
+  .header__logo-link {
+    margin: 7px 0;
+  }
+
+  .header__help-button {
+    border: none;
+    margin-left: 56px;
+    width: 70px;
+    height: 18px;
+    background: none;
+    font-size: 15px;
+    line-height: 18px;
+    cursor: pointer;
+  }
+
+  .header__button-name {
+    display: inline;
+    color: #0777ba;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  .header__user-menu--mobile {
+    display: none;
+  }
+
+  .header__help-menu-wrapper {
+    width: 237px;
+    margin-left: -237px;
+    padding: 4px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    top: 58px;
+    right: 21px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 #000000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      top: -11px;
+      right: 23px;
+      border: 10px solid transparent;
+      border-top: none;
+      border-bottom-color: #ffffff;
+      z-index: 5;
+    }
+  }
+
+  .header__searching-form {
+    padding-top: 95px;
+    margin-top: 67px;
+    min-height: 360px;
+    background-size: auto 360px;
+  }
+
+  .header__searching-form small {
+    display: block;
+    width: 100%;
+    margin-top: 9px;
+    text-align: left;
+  }
+
+  .header__searching-field-wrapper {
+    display: flex;
+    max-width: 958px;
+    margin: 0 auto;
+    position: unset;
+  }
+
+  .header__searching-form label {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 36px;
+  }
+
+  .header__searching-form input {
+    box-sizing: border-box;
+    width: 84.7%;
+    height: 60px;
+    padding: 0 18px;
+    border: none;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .header__searching-button {
+    position: unset;
+    flex-shrink: 0;
+    color: #ffffff;
+    height: 60px;
+    margin-left: 7px;
+    padding: 15px;
+    width: 140px;
+    background-color: #d30531;
+    background-image: none;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: inset 2px 2px 5px -1px grey, 0 0 5px -1px #000000;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 5px -1px #000000, 2px 2px 5px -1px grey;
+    }
+  }
+
+  .header__searching-button span {
+    display: inline;
+  }
+}
+
+@media (min-width: 990px) {
+  .header__searching-form small,
+  .header__searching-form label {
+    width: 958px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

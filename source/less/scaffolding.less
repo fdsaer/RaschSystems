@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "PTSansCaption";
+  src: local("PTSansCaption"), local("PT Sans Caption"), url("../fonts/ptsanscaption.woff") format("woff"), url("../fonts/ptsanscaption.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PTSansCaptionBold";
+  src: local("PTSansCaptionBold"), local("PT Sans Caption Bold"), url("../fonts/ptsanscaption-bold.woff") format("woff"), url("../fonts/ptsanscaption-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "PTSansCaption", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.visually-hidden:not(:active):not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 501px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .big-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}

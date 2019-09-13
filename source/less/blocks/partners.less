@@ -1,0 +1,125 @@
+.partners {
+  padding: 10px;
+  padding-top: 32px;
+  padding-bottom: 27px;
+}
+
+.partners__title {
+  width: 190px;
+  padding-left: 10px;
+  margin: 0 auto;
+  font-family: "PTSansCaption", "Arial", sans-serif;
+  line-height: 26px;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.partners__list-item {
+  box-sizing: border-box;
+  width: 150px;
+  min-height: 175px;
+  padding-top: 25px;
+
+  &:nth-child(3) .partners__list-item-link {
+    margin-bottom: 19px;
+    padding-left: 9px;
+  }
+
+  &:nth-child(3) .partners__list-item-name {
+    padding-left: 11px;
+  }
+
+  &:nth-child(4) .partners__list-item-link {
+    margin-bottom: 19px;
+    padding-right: 2px;
+  }
+
+  &:nth-child(4) .partners__list-item-image {
+    margin-bottom: 3px;
+  }
+
+  &:nth-child(5) .partners__list-item-link {
+    padding-left: 8px;
+  }
+
+  &:nth-child(5) .partners__list-item-name {
+    padding-left: 11px;
+  }
+
+  &:nth-child(6) .partners__list-item-link {
+    padding-right: 10px;
+  }
+
+  &:nth-child(6) .partners__list-item-name {
+    padding-right: 10px;
+  }
+}
+
+.partners__list-item-link {
+  display: block;
+  box-sizing: border-box;
+  width: 150px;
+  height: 90px;
+  margin-bottom: 21px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.partners__list-item-image {
+  vertical-align: middle;
+}
+
+.partners__list-item-name {
+  margin: 0 auto;
+  font-family: "PTSansCaptionBold", "Arial", sans-serif;
+  line-height: 15px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 360px) {
+  .partners {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  .partners {
+    padding: 11.3%;
+    padding-top: 75px;
+    padding-bottom: 52px;
+  }
+
+  .partners__title {
+    width: 215px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 24px;
+  }
+
+  .partners__list-item:nth-child(n) .partners__list-item-link {
+    margin-bottom: 26px;
+    padding: 0;
+  }
+
+  .partners__list-item:nth-child(n) .partners__list-item-name {
+    padding: 0;
+  }
+
+  .partners__list-item-name br {
+    display: none;
+  }
+}

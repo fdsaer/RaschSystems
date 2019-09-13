@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <title>Рассчетные системы тест</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
+    </head>
+  <body>
+  <header class="header container">
+      <nav class="header__nav">
+        <div class="header__top-line">
+          <ul class="header__user-menu header__user-menu--desktop">
+            <li class="header__user-menu-item header__user-menu-item--checked-out">
+              <a class="header__user-menu-link" href="#">Войти</a>
+            </li>
+            <li class="header__user-menu-item header__user-menu-item--checked-in">
+              <a class="header__user-menu-link" href="#">Выйти</a>
+            </li>
+          </ul>
+          <a class="header__logo-link">
+            <picture>
+              <source srcset="img/site-logo-desktop.png" media="(min-width: 769px)">
+              <img class="header__logo-image" src="img/site-logo.png" width="197" height="29" alt="Изображение логотипа">
+            </picture>
+          </a>
+          <div class="header__help-menu-wrapper header__help-menu-wrapper--hidden">
+            <ul class="header__help-menu">
+              <li class="header__help-menu-item header__help-menu-item--active">
+                <a class="header__help-menu-link" href="#">Как это работает</a>
+              </li>
+              <li class="header__help-menu-item">
+                <a class="header__help-menu-link" href="#">Вопрос-ответ</a>
+              </li>
+              <li class="header__help-menu-item">
+                <a class="header__help-menu-link" href="#">Служба поддержки</a>
+              </li>
+            </ul>
+            <ul class="header__user-menu header__user-menu--mobile">
+              <li class="header__user-menu-item header__user-menu-item--checked-out">
+                <a class="header__user-menu-link" href="#">Войти</a>
+              </li>
+              <li class="header__user-menu-item header__user-menu-item--checked-in">
+                <a class="header__user-menu-link" href="#">Выйти</a>
+              </li>
+            </ul>
+          </div>
+          <button class="header__help-button header__help-button--closed" type="button">
+            <span class="header__button-name">Помощь</span>
+          </button>
+        </div>
+      </nav>
+      <form class="header__searching-form" method="POST" action="">
+        <label for="searching-field">Поиск начислений</label>
+        <div class="header__searching-field-wrapper">
+          <input name="searching-field" id="searching-field" type="text" minlength="2" placeholder="Введите данные для поиска" required>
+          <button class="header__searching-button" type="submit"><span>Найти</span></button>
+        </div>
+        <small>Чем больше параметров введено, тем полнее результаты поиска</small>
+      </form>
+    </header>
+    <main class="content container">
+      <h1 class="content__title visually-hidden">Информация об услугах</h1>
+      <a class="content__share-link" href="#">
+        <img src="img/share-links.png" width="20" height="22" alt="Ссылка-поделиться">
+      </a>
+      <section class="content__payment payment">
+        <h2 class="payment__title">Здесь можно оплатить</h2>
+        <p class="payment__promo">Узнайте, как оплатить</p>
+        <ul class="payment__link-list">
+          <li class="payment__link-list-item">
+            <a class="payment__link" href="#gibdd">Штрафы и пошлины ГИБДД</a>
+          </li>
+          <li class="payment__link-list-item">
+            <a class="payment__link" href="#court">Судебные задолженности</a>
+          </li>
+          <li class="payment__link-list-item">
+            <a class="payment__link" href="#fns">Налоги</a>
+          </li>
+          <li class="payment__link-list-item">
+            <a class="payment__link" href="#ros">Услуги Росреестра</a>
+          </li>
+          <li class="payment__link-list-item">
+            <a class="payment__link">и другие услуги</a>
+          </li>
+        </ul>
+        <ul class="payment__list">
+          <li class="payment__list-item payment__list-item--active">
+            <a name="gibdd"></a>
+            <div class="payment__list-item-wrapper">
+              <h3 class="payment__list-item-title">Штрафы ГИБДД</h3>
+              <div class="payment__instruction-wrapper">
+                <p class="payment__instruction">Для поиска укажите номера водительско&shy;го удостоверения и свидетельства о&nbsp;регистрации ТС или номер штрафа.</p>
+                <p class="payment__instruction">Если у вас есть на руках постановление о&nbsp;штрафе, вы можете указать реквизиты самостоятельно.</p>
+                <h4 class="payment__subtitle">Платить вовремя &mdash; дешевле!</h4>
+                <p class="payment__remark">В первые 20 дней после выдачи постановления штраф можно оплатить со&nbsp;скидкой 50%.&ensp;Для своевременной опалты штрафов настройте уведомления в Личном кабинете.</p>
+              </div>
+            </div>
+            <img class="payment__image" src="img/gibdd.jpg" width="308" height="285" alt="Изображение ГИБДД">
+          </li>
+          <li class="payment__list-item payment__list-item--active">
+            <div class="payment__list-item-wrapper">
+              <h3 class="payment__list-item-title">Пошлины&ensp;ГИБДД</h3>
+              <div class="payment__instruction-wrapper">
+                <p class="payment__instruction">Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам услугу</p>
+                <a class="payment__link-to-pay" href="#">Пошлины ГИБДД</a>
+              </div>
+            </div>
+          </li>
+          <li class="payment__list-item payment__list-item--active">
+            <a name="court"></a>
+            <div class="payment__list-item-wrapper">
+              <h3 class="payment__list-item-title">Судебные задолженности</h3>
+              <div class="payment__instruction-wrapper">
+                <p class="payment__instruction">Для поиска начислений в ГИС ГМП укажите документы:<br> паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства</p>
+                <p class="payment__instruction">Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
+                <h4 class="payment__subtitle">Удобно!</h4>
+                <p class="payment__remark">Судебные задолженности можно погасить как сразу, так и по частям, комфортными для вас платежами. Информацию о совершенных платежах сохраняйте в Личном кабинете.</p>
+              </div>
+            </div>
+            <img class="payment__image" src="img/court.jpg" width="308" height="285" alt="Изображение суда">
+          </li>
+          <li class="payment__list-item payment__list-item--active">
+            <a name="fns"></a>
+            <div class="payment__list-item-wrapper">
+              <h3 class="payment__list-item-title">Налоги</h3>
+              <div class="payment__instruction-wrapper">
+                <p class="payment__instruction">Для поиска начислений по налогам в ГИС ГМП укажите ИНН или Индекс налогового документа, если у вас на руках есть квитанция.</p>
+                <h4 class="payment__subtitle">Важно!</h4>
+                <p class="payment__remark">Согласно законодательству РФ вы не можете оплачивать налоги за других физических лиц. Принимаются только платежи физических лиц.</p>
+              </div>
+            </div>
+            <img class="payment__image" src="img/fns.jpg" width="308" height="285" alt="Изображение ФНС">
+          </li>
+          <li class="payment__list-item payment__list-item--active">
+            <a name="ros"></a>
+            <div class="payment__list-item-wrapper">
+              <h3 class="payment__list-item-title">Услуги Росреестра</h3>
+              <div class="payment__instruction-wrapper">
+                <p class="payment__instruction">В поисковой строке укажите Код платежа, который был отправлен вам на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
+                <h4 class="payment__subtitle">Нет кода?</h4>
+                <p class="payment__remark">Если у вас еще нет кода платежа, перейдите на сайт <a href="#">rosreestr.ru</a> и сформируйте запрос на оплату электронных услуг Росреестра.</p>
+              </div>
+            </div>
+            <img class="payment__image" src="img/rosreestr.jpg" width="308" height="285" alt="Изображение росреестра">
+          </li>
+        </ul>
+      </section>
+      <section class="content__partner partners">
+        <h2 class="partners__title">С нами работают</h2>
+        <ul class="partners__list">
+          <li class="partners__list-item">
+            <a class="partners__list-item-link" href="#">
+              <img class="partners__list-item-image" src="img/partner1-logo.png" width="109" height="86" alt="Партнер 1">
+            </a>
+            <p class="partners__list-item-name">Партнер 1</p>
+          </li>
+          <li class="partners__list-item">
+            <a class="partners__list-item-link" href="#">
+              <img class="partners__list-item-image" src="img/partner2-logo.png" width="76" height="88" alt="Партнер 1">
+            </a>
+            <p class="partners__list-item-name">Компания-партнер <br>с длинным названием</p>
+          </li>
+          <li class="partners__list-item">
+            <a class="partners__list-item-link" href="#">
+              <img class="partners__list-item-image" src="img/partner3-logo.png" width="97" height="81" alt="Партнер 1">
+            </a>
+            <p class="partners__list-item-name">Партнер 3</p>
+          </li>
+          <li class="partners__list-item">
+            <a class="partners__list-item-link" href="#">
+              <img class="partners__list-item-image" src="img/partner4-logo.png" width="148" height="62" alt="Партнер 1">
+            </a>
+            <p class="partners__list-item-name">Название партнера 4</p>
+          </li>
+          <li class="partners__list-item">
+            <a class="partners__list-item-link" href="#">
+              <img class="partners__list-item-image" src="img/partner5-logo.png" width="116" height="86" alt="Партнер 1">
+            </a>
+            <p class="partners__list-item-name">Компания-партнер 5</p>
+          </li>
+          <li class="partners__list-item">
+            <a class="partners__list-item-link" href="#">
+              <img class="partners__list-item-image" src="img/partner6-logo.png" width="110" height="76" alt="Партнер 1">
+            </a>
+            <p class="partners__list-item-name">Партнер 6 с длинным названием</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footer__copyrights-wrapper">
+        <p class="footer__copyrights"><span>&copy; 2012&ndash;2018 </span><a href="#">ООО &laquo;Название компании&raquo;</a></p>
+        <p class="footer__additional-copyrights-links footer__additional-copyrights-links--mobile">Дополнительные ссылки и копирайты <a href="#">ООО &laquo;Фирма 2&raquo;</a></p>
+        <div class="footer__antivirus-link-wrapper">
+          <a class="footer__antivirus-link" href="#">
+            <img class="footer__antivirus-image" src="img/antivirus-logo.png" width="79" height="52" alt="Изображение антивируса">
+          </a>
+          <a class="footer__share-link" href="#">
+            <img src="img/share-links.png" width="20" height="22" alt="Ссылка-поделиться">
+          </a>
+        </div>
+      </div>
+      <ul class="footer__nav-links-list">
+        <li class="footer__nav-links-list-item">
+          <a class="footer__nav-link" href="#">О сервисе</a>
+        </li>
+        <li class="footer__nav-links-list-item">
+          <a class="footer__nav-link" href="#">Способы опалаты</a>
+        </li>
+        <li class="footer__nav-links-list-item">
+          <a class="footer__nav-link" href="#">Как это работает</a>
+        </li>
+        <li class="footer__nav-links-list-item">
+          <a class="footer__nav-link" href="#">Партнёрам</a>
+        </li>
+        <li class="footer__nav-links-list-item">
+          <a class="footer__nav-link" href="#">Статьи и новости</a>
+        </li>
+      </ul>
+      <ul class="footer__contact-links-list">
+        <li class="footer__contact-links-list-item">
+          <a class="footer__contact-link" href="#">8 800 123 4567</a><small>звонок по России бесплатный</small>
+        </li>
+        <li class="footer__contact-links-list-item">
+          <a class="footer__contact-link" href="#">Обратная связь</a>
+        </li>
+        <li class="footer__contact-links-list-item">
+          <a class="footer__contact-link" href="#">Мы вКонтакте</a>
+        </li>
+      </ul>
+      <div class="footer__additional-copyrights-wrapper">
+        <p class="footer__additional-copyrights-links footer__additional-copyrights-links--desktop">Дополнительные ссылки и&nbsp;копирайты <a href="#">ООО &laquo;Фирма 2&raquo;</a></p>
+        <a href="#"><img class="footer__additional-copyrights-image" src="img/firm2-logo.png" width="98" height="34" alt="Логотип фирмы">
+        </a>
+      </div>
+    </footer>
+
+    <section class="modal-login modal-login--hidden">
+      <p class="modal-login__text">
+        Введите логин и пароль для входа в Личный кабинет
+      </p>
+      <form class="modal-login__form" action="" method="POST">
+        <input class="modal-login__input-name" name="login" id="login" type="text" placeholder="Логин" required>
+        <input class="modal-login__input-password" name="password" id="password" type="password" placeholder="Пароль" required>
+        <button class="modal-login__enter" type="submit">Войти</button>
+      </form>
+      <a class="modal-login__forget-password" href="#">Забыли пароль?</a>
+      <a class="modal-login__registration" href="#">Регистрация</a>
+      <button class="modal-login__close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+    </section>
+
+    <div class="overlay overlay--hidden"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    </body>
+    </html>
